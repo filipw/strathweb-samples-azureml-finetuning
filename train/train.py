@@ -160,9 +160,6 @@ def main():
         save_strategy="epoch",
         bf16=True,
         tf32=True,
-        # --- THIS IS THE FIX ---
-        # Disabling gradient checkpointing to resolve the requires_grad error.
-        # This is safe on an A100 GPU.
         gradient_checkpointing=False,
         report_to=[],
     )
