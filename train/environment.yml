@@ -1,4 +1,4 @@
-name: pii-finetune-env-v4
+name: pii-finetune-env-final-stable-v2
 channels:
   - pytorch
   - nvidia
@@ -9,18 +9,18 @@ dependencies:
   - pytorch=2.3.1
   - pytorch-cuda=12.1
   - pip:
-    - transformers
-    - peft
-    - trl
-    - accelerate
+    - transformers==4.49.0
+    - peft==0.14.0
+    - trl==0.15.2
+    - accelerate==1.5.2
+    - datasets==3.4.0
+    - sentencepiece==0.2.0
     - azureml-acft-accelerator==0.0.63
     - azureml_acft_common_components==0.0.63
     - azureml-acft-contrib-hf-nlp==0.0.63
     - azureml-evaluate-mlflow==0.0.63
     - azureml-metrics[text]==0.0.63
     - mltable==1.6.1
-    - sentencepiece==0.2.0
-    - datasets==3.4.0
     - diffusers==0.31.0
     - rouge-score==0.1.2
     - sacrebleu==2.4.3
