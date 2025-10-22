@@ -1,5 +1,4 @@
+python-dotenv
 azure-ai-ml
 azure-identity
-python-dotenv
 ipykernel
-pandas
